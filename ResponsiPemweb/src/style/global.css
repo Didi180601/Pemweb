@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+:root {
+    --color1: #7286D3;
+    --color2: #8EA7E9;
+    --color3: #E5E0FF;
+    --color4: #FFF2F2;
+    --light: #f7f7f7;
+    --dark: #222222;
+    --gap-primary: 16px;
+    --gap-secondary: 8px;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+nav {
+    overflow: hidden;
+    background-color: var(--color2);
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: var(--color4);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+nav a:hover {
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
+nav a.active {
+    background-color: var(--color4);
+    color: var(--color1);
+}
+
+nav .icon {
+    display: none;
+}
+
+.container-db {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-primary);
+    margin-top: 20%;
+}
+.container-st {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: var(--gap-primary);
+}
+
+
+.btn {
+    border: none;
+    padding: var(--gap-secondary);
+    background-color: var(--light);
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark);
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+
+.btn:hover {
+    background-color: tomato;
+    color: var(--light);
+}
+
+
+@media screen and (max-width: 600px) {
+    nav a:not(:first-child) {display: none;}
+    nav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    nav.responsive { position: relative; }
+    nav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    nav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+.column {
+    -ms-flex: 50%;
+    flex: 50%;
+    padding: 0 4px;
+   }
+  
+   .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+  }
+  .row {
+    display: -ms-flexbox;
+     display: flex; 
+    -ms-flex-wrap: wrap;
+     flex-wrap: wrap; 
+     padding: 0 4px;
+     }
+  .header{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10%;
+    }
+  .tx-head{
+    text-align: center;
+
+  }
+  .kaki-1{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+  }
+  
+.mx-auto {
+    width: 1200px;
+}
+
+.card{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
